@@ -1,0 +1,14 @@
+{
+  "name": "sshwifty",
+  "description": "sshwifty",
+  "keywords": ["sshwifty"],
+  "env": {
+    "SSHWIFTY_LISTENPORT": {
+       "description": "必备设置",
+       "value": "SSHWIFTY_ENV_RENAMED:PORT"
+    }
+  },
+  "website": "https://github.com/snioer",
+  "repository": "https://github.com/snioer",
+  "stack": "container"
+}
