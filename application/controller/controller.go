@@ -1,6 +1,6 @@
 // Sshwifty - A Web SSH client
 //
-// Copyright (C) 2019-2021 NI Rui <ranqus@gmail.com>
+// Copyright (C) 2019-2022 Ni Rui <ranqus@gmail.com>
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as
@@ -63,7 +63,7 @@ func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 		if h.commonCfg.HostName != hostPort &&
 			!strings.HasPrefix(hostPort, h.hostNameChecker) {
-			clientLogger.Warning("Request invalid host \"%s\", deined",
+			clientLogger.Warning("Requested invalid host \"%s\", denied access",
 				r.Host)
 
 			serveFailure(
